@@ -266,11 +266,6 @@ function getOpConfig(job, name) {
 
 function schema() {
     return {
-        user: {
-            doc: 'User to use when reading the files. Default: "hdfs"',
-            default: 'hdfs',
-            format: 'optional_String'
-        },
         path: {
             doc: "HDFS location to process. Most of the time this will be a directory that contains multiple files",
             default: '',
